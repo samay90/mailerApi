@@ -15,6 +15,13 @@ app.get("/", (req, res) => {
     msg: "Welcome to Mailer Api",
     status: true,
     required: "API Key",
+    bodyFormat:{
+      senderName:"string",
+      receiverEmail:"Email Address",
+      subject:"Subject of Mail",
+      text:"Text of Mail",
+      body:"html body",
+    }
   });
 });
 app.post("/mail",async (req, res) => {
