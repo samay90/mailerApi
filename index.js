@@ -36,7 +36,7 @@ app.post("/mail", async (req, res) => {
     secure: false,
     auth: {
       user: "mailer.api.provider@gmail.com",
-      pass: "bptx ertl remv rupi",
+      pass: "App key",
     },
   });
   const sMail = async () => {
